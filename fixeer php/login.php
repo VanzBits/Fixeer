@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login - Fixeer</title>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="process_login.php" method="POST">
-            <label for="login">Login:</label>
-            <input type="text" id="login" name="login" required>
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <div class="form-container">
+        <form action="index.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" required>
 
             <button type="submit">Entrar</button>
+            <button type="button" onclick="window.location.href='cadastro.php'">Cadastrar</button>
+            <button type="button">Esqueci a senha</button>
         </form>
-        <div class="login-buttons">
-            <a href="cadastro.php" class="btn">Cadastrar-se</a>
-            <a href="esqueci_senha.php" class="btn">Esqueci a senha</a>
-        </div>
     </div>
 </body>
 </html>
